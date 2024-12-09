@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3525870029547296413
+--- !u!114 &-598354483475273983
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Name: DeselectInventory
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: -3525870029547296413}
+  - {fileID: -598354483475273983}
   isSkippable: 1
   actionListType: 0
   unfreezePauseMenus: 1

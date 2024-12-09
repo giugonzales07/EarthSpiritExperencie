@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5372127236647551732
+--- !u!114 &-3205918726306144243
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
   removeJournalPageMethod: 0
   menuToChange: Objectives
   menuToChangeParameterID: -1
-  elementToChange: SelectedTexture
+  elementToChange: SelectedStateType
   elementToChangeParameterID: -1
   journalText: 
   onlyAddNewJournal: 0
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_Name: ShowSelectedObjective
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 4135953043097338635}
-  - {fileID: 8671991109971164969}
-  - {fileID: 8515883349340731732}
-  - {fileID: -5372127236647551732}
+  - {fileID: 3764332294998747515}
+  - {fileID: -3205918726306144243}
+  - {fileID: 3793183306500447379}
+  - {fileID: 5356352096564071075}
   isSkippable: 1
   actionListType: 0
   unfreezePauseMenus: 1
@@ -75,7 +75,7 @@ MonoBehaviour:
   parameters: []
   tagID: 0
   backupData: []
---- !u!114 &4135953043097338635
+--- !u!114 &3764332294998747515
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   journalPageIndex: -1
   journalPageIndexParameterID: -1
   preprocessTextTokens: 0
---- !u!114 &8515883349340731732
+--- !u!114 &3793183306500447379
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
   journalPageIndex: -1
   journalPageIndexParameterID: -1
   preprocessTextTokens: 0
---- !u!114 &8671991109971164969
+--- !u!114 &5356352096564071075
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,7 +210,7 @@ MonoBehaviour:
   removeJournalPageMethod: 0
   menuToChange: Objectives
   menuToChangeParameterID: -1
-  elementToChange: SelectedStateType
+  elementToChange: SelectedTexture
   elementToChangeParameterID: -1
   journalText: 
   onlyAddNewJournal: 0

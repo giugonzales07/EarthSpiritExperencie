@@ -8,7 +8,7 @@ public class SimpleRotate : MonoBehaviour
     void Update(){
         // (x, y, z)
         // (frente/trás, cima/baixo, esquerdaa/direita)
-        transform.Rotate(0f, 5f * Time.deltaTime, 0f);
+        //transform.Rotate(0f, 5f * Time.deltaTime, 0f);
         //transform.Translate(2f * Time.deltaTime, -0.5f * Time.deltaTime, 0f);
     }
 }

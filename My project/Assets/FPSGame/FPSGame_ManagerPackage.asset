@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4a24d0e4a28423fb3249b923d7e418, type: 3}
   m_Name: FPSGame_ManagerPackage
   m_EditorClassIdentifier: 
-  actionsManager: {fileID: 11400000, guid: 9d729ac3b16701b4fb4fb9a64e87e009, type: 2}
-  sceneManager: {fileID: 11400000, guid: 94debc8dec570a5428bd21be0d30762e, type: 2}
-  settingsManager: {fileID: 11400000, guid: 495542d956a5df34fb9ce645469b2047, type: 2}
-  inventoryManager: {fileID: 11400000, guid: b1d25a5f8e49b4b4f99abed65a2f84fc, type: 2}
-  variablesManager: {fileID: 11400000, guid: 460add1fe265d294a9f0213a6908b533, type: 2}
-  speechManager: {fileID: 11400000, guid: 563b36e51e26bc043b24106cf191f4a4, type: 2}
-  cursorManager: {fileID: 11400000, guid: 649de7c5895a9cd4fb15f02e1baf768b, type: 2}
-  menuManager: {fileID: 11400000, guid: a226b16812fb9ac49b7c252c4f127c0f, type: 2}
+  actionsManager: {fileID: 11400000, guid: 5b06066b40f292341aba54a3a458ad0b, type: 2}
+  sceneManager: {fileID: 11400000, guid: 3c2f0f7d8bd65ea40b341192c008848e, type: 2}
+  settingsManager: {fileID: 11400000, guid: fb03836f52fd9bd41bff2144b62b2c7b, type: 2}
+  inventoryManager: {fileID: 11400000, guid: a01d676826de87140bf4c2c24a136ccb, type: 2}
+  variablesManager: {fileID: 11400000, guid: c72afb7282c74ac418b7d0758c11a0e1, type: 2}
+  speechManager: {fileID: 11400000, guid: 061bffb7996bafd49ada7509cceb99a7, type: 2}
+  cursorManager: {fileID: 11400000, guid: 8ff813f22d668da4dad3676b9f66a322, type: 2}
+  menuManager: {fileID: 11400000, guid: 9af221d41225f9744acd6d7dd6c9dce6, type: 2}
