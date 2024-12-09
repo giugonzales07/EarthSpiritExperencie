@@ -4,12 +4,12 @@ using UnityEngine;
 using AC;
 
 public class PlayerRotation : MonoBehaviour{
-    //public float RotationSpeed = 20.0f;
-    //public Transform playerBody; // Referência ao corpo do player
+    public float RotationSpeed = 20.0f;
+    public Transform playerBody; // Referência ao corpo do player
 
     // Update is called once per frame
     void Update(){
-        /*if(KickStarter.playerInput){
+        if(KickStarter.playerInput){
             // Obter inputs usando o sistema do Adventure Creator
             float turn = KickStarter.playerInput.InputGetAxis("Turn");
             // Obter os ângulos atuais do transform em Euler
@@ -18,6 +18,6 @@ public class PlayerRotation : MonoBehaviour{
             currentRotation.y += turn * RotationSpeed * Time.deltaTime;
             // Aplicar os novos ângulos ao transform usando Euler
             playerBody.eulerAngles = currentRotation;
-        }*/
+        }
     }
 }
