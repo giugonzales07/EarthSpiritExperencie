@@ -1,0 +1,36 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 21.02.2014 22:42:20
+
+newmtl Windows
+	Ns 8.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.039600 0.039600 0.039600
+	Ke 0.000000 0.000000 0.000000
+	map_Ka D:\3DMAxModels\Готовые Модели\Stone House\Scanline\DiffuseWindows.jpg
+	map_Kd D:\3DMAxModels\Готовые Модели\Stone House\Scanline\DiffuseWindows.jpg
+	map_Ks D:\3DMAxModels\Готовые Модели\Stone House\Scanline\WindowsReflect.jpg
+	map_bump D:\3DMAxModels\Готовые Модели\Stone House\Scanline\WindowsBump.jpg
+	bump D:\3DMAxModels\Готовые Модели\Stone House\Scanline\WindowsBump.jpg
+
+newmtl House
+	Ns 8.000000
+	Ni 1.500000
+	d 1.000000
+	Tr 0.000000
+	Tf 1.000000 1.000000 1.000000 
+	illum 2
+	Ka 0.588000 0.588000 0.588000
+	Kd 0.588000 0.588000 0.588000
+	Ks 0.039600 0.039600 0.039600
+	Ke 0.000000 0.000000 0.000000
+	map_Ka D:\3DMAxModels\Готовые Модели\Stone House\Scanline\DiffuseHouse.jpg
+	map_Kd D:\3DMAxModels\Готовые Модели\Stone House\Scanline\DiffuseHouse.jpg
+	map_Ks D:\3DMAxModels\Готовые Модели\Stone House\Scanline\HomeReflect.jpg
+	map_bump D:\3DMAxModels\Готовые Модели\Stone House\Scanline\HomeBump.jpg
+	bump D:\3DMAxModels\Готовые Модели\Stone House\Scanline\HomeBump.jpg
