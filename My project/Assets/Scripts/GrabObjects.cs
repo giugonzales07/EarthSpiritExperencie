@@ -24,7 +24,7 @@ public class GrabObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         Transform cam = Camera.main.transform;
+        Transform cam = Camera.main.transform;
         RaycastHit hit = new RaycastHit();
 
         if (Physics.Raycast(cam.position, cam.forward, out hit, maxDist, acceptLayers, QueryTriggerInteraction.Ignore))
@@ -56,9 +56,9 @@ public class GrabObjects : MonoBehaviour
 
             if (rigSaveGrabed == Vector2.zero)
                 rigSaveGrabed = new Vector2(objRig.drag, objRig.angularDrag);
-            objRig.drag = 2.5f;
-            objRig.angularDrag = 2.5f;
-            objRig.AddForce(-(grabedObj.transform.position - posGrab).normalized * calc, ForceMode.Impulse);
+                objRig.drag = 2.5f;
+                objRig.angularDrag = 2.5f;
+                objRig.AddForce(-(grabedObj.transform.position - posGrab).normalized * calc, ForceMode.Impulse);
 
             if (Input.GetMouseButtonUp(0) || objRig.velocity.magnitude >= 25 || dist >= 8)
                 UngrabObject();
