@@ -8,7 +8,7 @@ public class FirstPersonCamera : MonoBehaviour
     public Transform playerHead;
 
     float sensitivityX = 10f;
-    float sensitivityY = 2f;
+    float sensitivityY = 10f;
 
     float rotatioX = 0;
     float rotatioY = 0;
@@ -25,7 +25,8 @@ public class FirstPersonCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void LateUpdate(){

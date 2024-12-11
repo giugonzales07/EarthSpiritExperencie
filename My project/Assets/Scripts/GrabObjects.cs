@@ -11,7 +11,10 @@ public class GrabObjects : MonoBehaviour
     [Tooltip("Put all layers, the player layer not!")]
     public LayerMask acceptLayers = 0;
 
-    private GameObject grabedObj;
+    [HideInInspector]
+    public GameObject grabedObj;
+    [HideInInspector]
+    public bool possibleGrab = false;
     private Vector2 rigSaveGrabed;
 
 
@@ -31,13 +34,17 @@ public class GrabObjects : MonoBehaviour
         {
             Debug.DrawLine(cam.position, hit.point, Color.blue);
 
-            foreach (string tag in objectTags)
+            foreach (string tag in objectTags){
+                possibleGrab = false;
                 if (hit.transform.tag == tag)
                 {
                     if (Input.GetMouseButtonDown(0))
                         grabedObj = hit.transform.gameObject;
-                    
+                    possibleGrab = true;
                 }
+            }
+        } else {
+            possibleGrab = false;
         }
 
 
@@ -56,11 +63,17 @@ public class GrabObjects : MonoBehaviour
 
             if (rigSaveGrabed == Vector2.zero)
                 rigSaveGrabed = new Vector2(objRig.drag, objRig.angularDrag);
-                objRig.drag = 2.5f;
-                objRig.angularDrag = 2.5f;
-                objRig.AddForce(-(grabedObj.transform.position - posGrab).normalized * calc, ForceMode.Impulse);
+            objRig.drag = 2.5f;
+            objRig.angularDrag = 2.5f;
+            objRig.AddForce(-(grabedObj.transform.position - posGrab).normalized * calc, ForceMode.Impulse);
 
-            if (Input.GetMouseButtonUp(0) || objRig.velocity.magnitude >= 25 || dist >= 8)
+            if (Input.GetMouseButtonUp(0))
+                UngrabObject();
+
+            if (objRig.velocity.magnitude >= 25)
+                UngrabObject();
+
+            if (dist >= 8)
                 UngrabObject();
         }
     }

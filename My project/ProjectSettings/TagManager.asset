@@ -6,6 +6,12 @@ TagManager:
   tags:
   - BackgroundCamera
   - Objeto
+  - Trash_General
+  - Trash_recy
+  - Trash_comercial
+  - bag_general
+  - bag_recy
+  - bag_comercial
   layers:
   - Default
   - TransparentFX
