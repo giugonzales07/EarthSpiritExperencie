@@ -7,7 +7,7 @@ public class FirstPersonCamera : MonoBehaviour
     public Transform playerBody;
     public Transform playerHead;
 
-    float sensitivityX = 1.2f;
+    float sensitivityX = 10f;
     float sensitivityY = 2f;
 
     float rotatioX = 0;
