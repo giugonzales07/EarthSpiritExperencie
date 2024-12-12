@@ -21,14 +21,17 @@ public class TrashBinRecy : MonoBehaviour
         {
             case "bag_comercial":
                 FindObjectOfType<GameManager>().LosePoints();
+                FindObjectOfType<Timer>().SubTime();
                 StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
             case "bag_recy":
                 FindObjectOfType<GameManager>().WinPoints();
+                FindObjectOfType<Timer>().AddTime();
                 StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
             case "bag_general":
                 FindObjectOfType<GameManager>().LosePoints();
+                FindObjectOfType<Timer>().SubTime();
                 StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
         }
