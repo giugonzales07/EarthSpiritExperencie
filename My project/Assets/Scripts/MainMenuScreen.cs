@@ -10,11 +10,11 @@ public class MainMenuScreen : MonoBehaviour
     }
 
     public void GoToInstructionMenu(){
-        SceneManager.LoadScene("InstructionMenu");
+        //SceneManager.LoadScene("InstructionMenu");
     }
 
     public void GoToMainMenu(){
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("MainMenu");
     }
 
     public void ExitButton(){

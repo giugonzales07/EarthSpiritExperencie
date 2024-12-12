@@ -21,20 +21,21 @@ public class TrashBinGeneral : MonoBehaviour
         {
             case "bag_comercial":
                 FindObjectOfType<GameManager>().LosePoints();
+                StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
             case "bag_recy":
                 FindObjectOfType<GameManager>().LosePoints();
+                StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
             case "bag_general":
                 FindObjectOfType<GameManager>().WinPoints();
+                StartCoroutine(DestroyAfterFrame(collision.gameObject));
                 break;
         }
-        // Destruir o objeto de colisão após um quadro
-        StartCoroutine(DestroyAfterFrame(collision.gameObject));
     }
 
     private IEnumerator DestroyAfterFrame(GameObject obj){
         yield return null; // Espera um quadro
-        Destroy(obj);
+        DestroyImmediate(obj);
     }
 }

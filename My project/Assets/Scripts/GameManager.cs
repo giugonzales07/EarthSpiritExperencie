@@ -12,15 +12,10 @@ public class GameManager : MonoBehaviour
 
     public GameOverScreen gameOverScreen;
 
-    public void GameOver(){
-        gameOverScreen.Setup(score);
-    }
-    // Start is called before the first frame update
     void Start(){
         score = 0;
     }
 
-    // Update is called once per frame
     void Update(){
         score_visible.text = "Points: " + score;
         if(Input.GetKeyDown(KeyCode.R)){
@@ -38,8 +33,12 @@ public class GameManager : MonoBehaviour
         score -= 1;
     }
 
+    public void GameOver(){
+        gameOverScreen.Setup(score);
+    }
+
     public void RestartGame(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("FirstScene");
     }
 
     public void ExitGame(){

@@ -14,10 +14,10 @@ public class GameOverScreen : MonoBehaviour
     }
 
     public void RestartButton(){
-        FindObjectOfType<GameManager>().RestartGame();
+        SceneManager.LoadScene("FirstScene");
     }
 
     public void ExitButton(){
-        FindObjectOfType<GameManager>().ExitGame();
+        SceneManager.LoadScene("MainMenu");
     }
 }
